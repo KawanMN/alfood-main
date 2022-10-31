@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Link, Paper, TextField, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, Button, Link, Paper, Toolbar, Typography } from "@mui/material"
 import { Container } from "@mui/system"
 import { Link as RouterLink, Outlet } from "react-router-dom"
 
@@ -22,6 +22,17 @@ const PaginaBaseAdmin = () => {
                             <Link component={RouterLink} to="/admin/restaurantes/novo">
                                 <Button sx={{ color: 'white', my: 3, marginLeft: 4 }}>
                                     Novo Restaurante
+                                </Button>
+                            </Link>
+
+                            <Link component={RouterLink} to="/admin/pratos">
+                                <Button sx={{ color: 'white', my: 3, marginLeft: 4 }}>
+                                    Pratos
+                                </Button>
+                            </Link>
+                            <Link component={RouterLink} to="/admin/pratos/novo">
+                                <Button sx={{ color: 'white', my: 3, marginLeft: 4 }}>
+                                   Novo Prato
                                 </Button>
                             </Link>
                         </Box>
